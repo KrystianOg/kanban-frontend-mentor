@@ -1,0 +1,9 @@
+{
+  "firstSteps": "first steps",
+  "firstStepsDescription": "just the basics - Everything you need to know to set up your database and authentication.",
+  "documentation": "documentation",
+  "documentationDescription": "learn more about Create T3 App, the libraries it uses, and how to deploy it.",
+  "loggedInAs": "logged in as",
+  "signIn": "sign in",
+  "signOut": "sign out"
+}

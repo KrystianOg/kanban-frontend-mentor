@@ -1,0 +1,10 @@
+{
+  "hello": "witaj świecie",
+  "firstSteps": "pierwsze kroki",
+  "firstStepsDescription": "tylko podstawy - wszystko, co musisz wiedzieć, aby skonfigurować swoją bazę danych i autentykację.",
+  "documentation": "dokumentacja",
+  "documentationDescription": "dowiedz się więcej o Create T3 App, bibliotekach, które używa, i jak go wdrożyć.",
+  "loggedInAs": "zalogowany jako",
+  "signIn": "zaloguj się",
+  "signOut": "wyloguj się"
+  }
