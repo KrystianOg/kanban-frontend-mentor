@@ -6,6 +6,7 @@ export type LocalTask = Omit<Task, "columnId" | "taskId" | "id"> & {
 
 export type LocalColumn = Omit<Column, "boardId" | "id"> & {
   tasks: LocalTask[];
+  color?: string;
 };
 
 export type LocalBoard = Omit<Board, "id"> & {
@@ -19,6 +20,7 @@ export const board: LocalBoard = {
     {
       name: "To Do",
       order: 1,
+      color: "#fff",
       tasks: [
         {
           title: "Build UI for onboarding flow",
@@ -45,6 +47,7 @@ export const board: LocalBoard = {
     {
       name: "Doing",
       order: 2,
+      color: "#909",
       tasks: [
         {
           title: "Design settings and search pages",
@@ -82,6 +85,7 @@ export const board: LocalBoard = {
     {
       name: "Done",
       order: 3,
+      color: "#0a0",
       tasks: [
         {
           title: "Conduct 5 wireframe tests",

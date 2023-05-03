@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { getServerSideTranslations } from "~/utils";
 import { Default as DefaultLayout } from "~/layouts";
 import { useTranslation } from "next-i18next";
-import { Column, Task } from "~/components/Board";
+import { Column } from "~/components/Board";
 
 import { board as exampleBoard, type LocalBoard } from "~/mocks/board1";
 import classNames from "classnames";
@@ -50,6 +50,7 @@ const Boards: NextPage = () => {
               {board.columns.map((column, id) => (
                 <Column key={id} column={column} />
               ))}
+              <Column />
             </>
           )}
         </main>
