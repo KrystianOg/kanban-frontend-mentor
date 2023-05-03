@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { useTranslation } from "next-i18next";
-import { getServerSideTranslations } from "~/hooks";
+import { getServerSideTranslations } from "~/utils";
 import { api } from "~/utils/api";
 
 const Home: NextPage = () => {

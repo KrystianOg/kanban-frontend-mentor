@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import { Color, Section, Text } from "~/components/theme";
 import { Button, Checkbox, TextField, Dropdown } from "~/components/base";
-import { getServerSideTranslations } from "~/hooks";
+import { getServerSideTranslations } from "~/utils";
 import { useTranslation } from "next-i18next";
 
 const Theme: NextPage = () => {
