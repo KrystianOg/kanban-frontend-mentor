@@ -57,6 +57,12 @@ const Home: NextPage = () => {
               className="rounded-3xl bg-primary px-8 py-2 text-white"
             >
               Theme
+            </Link>{" "}
+            <Link
+              href="/boards"
+              className="rounded-3xl bg-primary px-8 py-2 text-white"
+            >
+              Boards
             </Link>
             <AuthShowcase />
           </div>
