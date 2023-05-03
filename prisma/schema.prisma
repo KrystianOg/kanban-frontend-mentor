@@ -83,6 +83,7 @@ model Column {
     board   Board  @relation(fields: [boardId], references: [id], onDelete: Cascade)
     tasks   Task[]
     order   Int    @default(1)
+    color   String @default("#fff")
 
     @@map(name: "columns")
 }
@@ -91,13 +92,24 @@ model Task {
     id          String  @id @default(cuid())
     title       String
     description String?
-    status      String // TODO: think if this should be of a column name
-    subtasks    Task[]  @relation("Task")
+    order       Int     @default(1)
+    subtasks    Subtask[]
 
     columnId String
     column   Column @relation(fields: [columnId], references: [id], onDelete: Cascade)
 
-    // parent task
-    taskId String? // parent task id needed if subtask
-    Task   Task?   @relation("Task", fields: [taskId], references: [id])
+  @@map(name: "tasks")
+}
+
+model Subtask {
+  id String @id @default(cuid())
+  title String
+  description String?
+  order Int @default(1)
+  completed Boolean @default(false) // subject to change
+
+  taskId String
+  task Task @relation(fields: [taskId], references: [id], onDelete: Cascade)
+
+  @@map(name: "subtasks")
 }

@@ -1,0 +1,21 @@
+{
+  "colors": "colors",
+  "typography": "typography",
+  "heading": "heading",
+  "bold": "bold",
+  "medium": "medium",
+  "line": "line",
+  "interactiveElements": "interactive elements",
+  "lightVersion": "light version",
+  "darkVersion": "dark version",
+  "subtaskCheckbox": "subtask checkbox",
+  "textfield": "text field",
+  "enterTaskName": "enter task name",
+  "buildingASlideshow": "Building a slideshow",
+  "idle": "idle",
+  "hovered": "hovered",
+  "completed": "completed",
+  "active": "Active",
+  "error": "Error",
+  "cantBeEmpty": "can't be empty"
+}
