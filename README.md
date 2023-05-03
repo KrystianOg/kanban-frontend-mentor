@@ -49,21 +49,34 @@ useful commands:
 
 - `docker exec -it <container id> bash` - open bash in container, then `mysql -u root -p
 
-### Nice to have VSCode extensions
+## Components overview
 
-- Github Copilot Obviously
-- Prettier - Code formatter
-- ES7+ React/Redux/React-Native snippets
-- Prisma
-- npm intellisense
-- Code Spell Checker
-- Polish - Code Spell Checker
-- Console Ninja
-- Comment Anchors
-- Tailwind CSS IntelliSense
-- Tailwind Docs
-- Tailwind Fold
-- Tailwind Config Viewer
-- EditorConfig for VS Code
-- TabOut
-- Template String Converter
+[//]: # Add components description here
+
+- 'src/components/base/Button' - Button component
+- 'src/components/base/Checkbox' - Checkbox component
+- 'src/components/base/TextField' - Textfield component
+- 'src/components/base/Dropdown' - Dropdown component
+
+We will need this from headless ui
+
+- [ ] Menu
+- [ ] Dialog (Modal)
+- [ ] Listbox (Select)
+- [ ] Combobox (Autocomplete) - if we'd like to add some more functionalities
+- [ ] Switch can be used for theme switcher
+- [ ] Popover - tooltips or something
+- [ ] radio group - (i believe nav menu - but not so sure)
+
+## Routing overview
+
+- / - Home page
+- /login - Login page
+- /register - Register page
+- /forgot-password - Forgot password page
+- /reset-password - Reset password page
+- /dashboard - Dashboard page
+- /dashboard/boards - Boards page
+- /dashboard/boards/:id - Board page
+- /dashboard/boards/:id/settings - Board settings page (not yet planned)
+  ...
