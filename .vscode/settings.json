@@ -1,14 +1,18 @@
 {
   "cSpell.words": [
     "dbpush",
+    "headlessui",
     "kanban",
     "Plukas",
     "podzadań",
+    "roadmap",
     "superjson",
     "tailwindcss",
     "tanstack",
+    "toastify",
     "trpc",
-    "usehooks"
+    "usehooks",
+    "wireframe"
   ],
   "cSpell.language": "en,pl",
   "svg.preview.background": "transparent"

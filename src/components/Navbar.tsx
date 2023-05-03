@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 const Navbar = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(true); // add local storage
+
   const boards = [
     {
       id: 1,
@@ -16,8 +20,11 @@ const Navbar = () => {
     },
   ];
   return (
-    <aside className="flex h-screen w-72 flex-col">
-      <div className="flex">
+    <aside
+      className="z-40 flex h-screen w-72 flex-col border-r border-slate-600 bg-white dark:bg-slate-700"
+      aria-label="Sidebar"
+    >
+      <div className="flex h-24">
         Logo
         <h1>kanban</h1>
       </div>
