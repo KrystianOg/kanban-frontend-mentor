@@ -3,24 +3,27 @@
  * for Docker builds.
  */
 await import("./src/env.mjs");
-import i18config from './next-i18next.config.mjs'
-import path from 'path'
-import { fileURLToPath } from 'url';
+import path from "path";
+import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
-
-  /**
-   * If you have `experimental: { appDir: true }` set, then you must comment the below `i18n` config
-   * out.
-   *
-   * @see https://github.com/vercel/next.js/issues/41980
-   */
-  i18n: i18config.i18n,
   sassOptions: {
-    includePaths: [__dirname, 'src/styles']
-  }
+    includePaths: [__dirname, "src/styles"],
+  },
+  experimental: {
+    typedRoutes: true,
+  },
+  redirects: async () => {
+    return [
+      {
+        source: "/",
+        destination: "/en",
+        permanent: true,
+      },
+    ];
+  },
 };
 export default config;
