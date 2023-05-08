@@ -1,0 +1,8 @@
+@use "~/styles/theme.scss" as *;
+
+// may be used in the future but not currently
+@mixin shadow {
+  border-radius: 50px;
+  background: $slate-700;
+  box-shadow: 20px 20px 60px $slate-800, -20px -20px 60px $slate-600;
+}

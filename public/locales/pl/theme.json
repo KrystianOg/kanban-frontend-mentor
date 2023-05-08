@@ -1,0 +1,21 @@
+{
+  "colors": "kolory",
+  "typography": "typografia",
+  "heading": "nagłówek",
+  "bold": "pogrubienie",
+  "medium": "średni",
+  "line": "linia",
+  "interactiveElements": "elementy interaktywne",
+  "lightVersion": "wersja jasna",
+  "darkVersion": "wersja ciemna",
+  "subtaskCheckbox": "pole wyboru podzadań",
+  "textfield": "pole tekstowe",
+  "enterTaskName": "wpisz nazwę zadania",
+  "buildingASlideshow": "tworzenie pokazu slajdów",
+  "idle": "nieaktywny",
+  "hovered": "najechany",
+  "completed": "ukończony",
+  "active": "aktywny",
+  "error": "błąd",
+  "cantBeEmpty": "nie może być puste"
+}

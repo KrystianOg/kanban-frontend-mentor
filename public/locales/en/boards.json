@@ -1,0 +1,8 @@
+{
+  "title": "Board",
+  "platformLaunch": "Platform Launch",
+  "addNewTask": "Add New Task",
+  "addNewColumn": "Add New Column",
+  "createNewBoard": "Create New Board",
+  "boardEmpty": "This board is empty. Create a new column to get started"
+}
