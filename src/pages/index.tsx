@@ -3,11 +3,8 @@ import Head from "next/head";
 import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { useTranslation } from "next-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import nextI18nConfig from "~/../next-i18next.config.mjs";
-
+import { getServerSideTranslations } from "~/utils";
 import { api } from "~/utils/api";
-import { t } from "i18next";
 
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
@@ -55,6 +52,12 @@ const Home: NextPage = () => {
             <p className="text-2xl text-white">
               {hello.data ? hello.data.greeting : "Loading tRPC query..."}
             </p>
+            <Link
+              href="/theme"
+              className="rounded-3xl bg-primary px-8 py-2 text-white"
+            >
+              Theme
+            </Link>
             <AuthShowcase />
           </div>
         </div>
@@ -65,14 +68,7 @@ const Home: NextPage = () => {
 
 export default Home;
 
-export const getServerSideProps = async ({ locale }: { locale: string }) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["common"], nextI18nConfig, [
-      "en",
-      "pl",
-    ])),
-  },
-});
+export const getServerSideProps = getServerSideTranslations("common");
 
 const AuthShowcase: React.FC = () => {
   const { data: sessionData } = useSession();
